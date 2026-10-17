@@ -1,0 +1,16 @@
+{% extends "template.html.twig" %}
+{% block title %}
+    {{ parent() }} - Accueil
+{% endblock %}
+{% block titre%}
+    {{ parent() }} 
+
+    Bienvenue 
+{% endblock %}
+
+{% block body%}
+   <p> le nombre aleatoire = {{number}} </p>
+   <hr>
+   Lien hypertexte <a href"path{{test_indicateur}}">contact</a>
+{% endblock %}
+

@@ -1,0 +1,16 @@
+<h2>Listes des indicateurs<h2>
+<table border="1" class="table table-bordered">
+<thead>
+<tr><th>Indicateur</th><th>Valeur</th><th>Unité</th></tr>
+</thead>
+<tbody>
+{% for indicateur in indicateurs %}
+<tr>
+<td>{{ indicateur.libelle }}</td>
+<td>{{ indicateur.valeur | number_format(2,'.','#' ) }}</td>
+ <td>{{indicateur.unite }}</td>
+</tr>
+
+{% endfor %}
+</tbody>
+</table>

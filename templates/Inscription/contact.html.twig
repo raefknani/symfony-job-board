@@ -1,0 +1,17 @@
+{% extends "template.html.twig" %}
+{% block title %}{{ parent() }} - Contact{% endblock %}
+{% block titre %}{{ parent() }} — Nous contacter{% endblock %}
+{% block body %}
+<div class="alert alert-info">Formulaire de contact</div>
+<form class="row g-3">
+<div class="col-md-6">
+<input type="text" class="form-control" name="nom" placeholder="Votre nom">
+</div>
+<div class="col-md-6">
+<input type="email" class="form-control" name="email" placeholder="Votre e-mail">
+</div>
+<div class="col-12">
+<button class="btn btn-primary">Envoyer</button>
+</div>
+</form>
+{% endblock %}
