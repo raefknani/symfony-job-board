@@ -1,0 +1,26 @@
+{% extends 'template_job.html.twig' %}
+
+{% block title %}
+
+	{{ parent() }}
+	- Detail Job
+
+{% endblock %}
+
+
+{% block body %}
+
+	<h3>Detail Job</h3>
+
+	<ul>
+		<li>Type :
+			{{ job.getType }}</li>
+
+		<li>Company :
+			{{ job.getCompany }}</li>
+
+		<li>Date :
+			{{ job.getExpiresAt | date("d-m-Y") }}</li>
+	</ul>
+
+{% endblock %}
